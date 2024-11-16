@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiros - Travel Planner</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="gradient-bg">
+    <div class="container centered">
+        <div class="navbar animated-navbar">
+            <h2>Meus Roteiros</h2>
+            <button id="logoutButton" class="btn-animated">Sair <i class="fas fa-sign-out-alt"></i></button>
+        </div>
+        <div class="form-container">
+            <input type="text" id="destination" placeholder="Local a visitar">
+            <input type="text" id="activity" placeholder="Atividade (separadas por vírgula)">
+            <button id="addPlan" class="btn-animated">Adicionar Roteiro <i class="fas fa-plus-circle"></i></button>
+        </div>
+        <ul id="plansList" class="list-animated"></ul>
+    </div>
+    <script src="js/db-simulation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
